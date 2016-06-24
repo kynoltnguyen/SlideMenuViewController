@@ -12,6 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *item1;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *item2;
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+- (IBAction)Done:(id)sender;
 
 @end
 
