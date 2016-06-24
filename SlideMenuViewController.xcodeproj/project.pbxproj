@@ -15,6 +15,9 @@
 		68F89EA01D1CE0D6009EA633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F89E9E1D1CE0D6009EA633 /* LaunchScreen.storyboard */; };
 		68F89EAB1D1CE0D6009EA633 /* SlideMenuViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89EAA1D1CE0D6009EA633 /* SlideMenuViewControllerTests.m */; };
 		68F89EB61D1CE0D6009EA633 /* SlideMenuViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89EB51D1CE0D6009EA633 /* SlideMenuViewControllerUITests.m */; };
+		68F89ECB1D1CE1B1009EA633 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ECA1D1CE1B1009EA633 /* SWRevealViewController.m */; };
+		68F89ECE1D1CE1BD009EA633 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F89ECC1D1CE1BD009EA633 /* reveal-icon.png */; };
+		68F89ECF1D1CE1BD009EA633 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F89ECD1D1CE1BD009EA633 /* reveal-icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		68F89EB11D1CE0D6009EA633 /* SlideMenuViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenuViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F89EB51D1CE0D6009EA633 /* SlideMenuViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideMenuViewControllerUITests.m; sourceTree = "<group>"; };
 		68F89EB71D1CE0D6009EA633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F89EC91D1CE1B1009EA633 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		68F89ECA1D1CE1B1009EA633 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		68F89ECC1D1CE1BD009EA633 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
+		68F89ECD1D1CE1BD009EA633 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +110,10 @@
 			children = (
 				68F89E931D1CE0D6009EA633 /* AppDelegate.h */,
 				68F89E941D1CE0D6009EA633 /* AppDelegate.m */,
-				68F89E961D1CE0D6009EA633 /* ViewController.h */,
-				68F89E971D1CE0D6009EA633 /* ViewController.m */,
-				68F89E991D1CE0D6009EA633 /* Main.storyboard */,
-				68F89E9C1D1CE0D6009EA633 /* Assets.xcassets */,
-				68F89E9E1D1CE0D6009EA633 /* LaunchScreen.storyboard */,
-				68F89EA11D1CE0D6009EA633 /* Info.plist */,
+				68F89EC91D1CE1B1009EA633 /* SWRevealViewController.h */,
+				68F89ECA1D1CE1B1009EA633 /* SWRevealViewController.m */,
+				68F89ED11D1CE1CB009EA633 /* Storyboard */,
+				68F89ED01D1CE1C5009EA633 /* View */,
 				68F89E901D1CE0D6009EA633 /* Supporting Files */,
 			);
 			path = SlideMenuViewController;
@@ -117,6 +122,10 @@
 		68F89E901D1CE0D6009EA633 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68F89E9C1D1CE0D6009EA633 /* Assets.xcassets */,
+				68F89EA11D1CE0D6009EA633 /* Info.plist */,
+				68F89ECC1D1CE1BD009EA633 /* reveal-icon.png */,
+				68F89ECD1D1CE1BD009EA633 /* reveal-icon@2x.png */,
 				68F89E911D1CE0D6009EA633 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +147,24 @@
 				68F89EB71D1CE0D6009EA633 /* Info.plist */,
 			);
 			path = SlideMenuViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		68F89ED01D1CE1C5009EA633 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68F89E961D1CE0D6009EA633 /* ViewController.h */,
+				68F89E971D1CE0D6009EA633 /* ViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		68F89ED11D1CE1CB009EA633 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				68F89E991D1CE0D6009EA633 /* Main.storyboard */,
+				68F89E9E1D1CE0D6009EA633 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				68F89EA01D1CE0D6009EA633 /* LaunchScreen.storyboard in Resources */,
+				68F89ECF1D1CE1BD009EA633 /* reveal-icon@2x.png in Resources */,
 				68F89E9D1D1CE0D6009EA633 /* Assets.xcassets in Resources */,
 				68F89E9B1D1CE0D6009EA633 /* Main.storyboard in Resources */,
+				68F89ECE1D1CE1BD009EA633 /* reveal-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +305,7 @@
 				68F89E981D1CE0D6009EA633 /* ViewController.m in Sources */,
 				68F89E951D1CE0D6009EA633 /* AppDelegate.m in Sources */,
 				68F89E921D1CE0D6009EA633 /* main.m in Sources */,
+				68F89ECB1D1CE1B1009EA633 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
