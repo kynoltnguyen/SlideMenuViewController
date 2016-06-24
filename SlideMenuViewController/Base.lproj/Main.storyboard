@@ -146,12 +146,48 @@
                     <view key="view" contentMode="scaleToFill" id="XRt-VD-uxL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moV-Xa-XdX">
+                                <rect key="frame" x="20" y="72" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DpY-g0-KaA"/>
+                                    <constraint firstAttribute="height" constant="30" id="j2R-hW-NWD"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gY0-qx-ZpZ">
+                                <rect key="frame" x="50" y="123" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hv5-v5-wC7">
+                                <rect key="frame" x="50" y="184" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hv5-v5-wC7" secondAttribute="trailing" constant="50" id="Bgl-74-Kh4"/>
+                            <constraint firstItem="hv5-v5-wC7" firstAttribute="top" secondItem="gY0-qx-ZpZ" secondAttribute="bottom" constant="31" id="MBp-Cr-rXs"/>
+                            <constraint firstItem="hv5-v5-wC7" firstAttribute="leading" secondItem="XRt-VD-uxL" secondAttribute="leading" constant="50" id="MfO-3O-bZL"/>
+                            <constraint firstItem="gY0-qx-ZpZ" firstAttribute="top" secondItem="moV-Xa-XdX" secondAttribute="bottom" constant="21" id="Ov5-rT-Av7"/>
+                            <constraint firstAttribute="trailing" secondItem="gY0-qx-ZpZ" secondAttribute="trailing" constant="50" id="U68-di-Rnv"/>
+                            <constraint firstItem="moV-Xa-XdX" firstAttribute="leading" secondItem="XRt-VD-uxL" secondAttribute="leading" constant="20" id="gd1-Ia-9M0"/>
+                            <constraint firstItem="gY0-qx-ZpZ" firstAttribute="leading" secondItem="XRt-VD-uxL" secondAttribute="leading" constant="50" id="iaH-XF-AWb"/>
+                            <constraint firstItem="moV-Xa-XdX" firstAttribute="top" secondItem="Oo2-sJ-dc2" secondAttribute="bottom" constant="8" id="tm9-4e-6BV"/>
+                            <constraint firstItem="8Dg-QH-yls" firstAttribute="top" secondItem="gY0-qx-ZpZ" secondAttribute="bottom" constant="447" id="xBu-WL-vLB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="icr-Hg-IR6">
                         <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="q1G-ek-udN"/>
                         <barButtonItem key="rightBarButtonItem" image="reveal-icon.png" id="PFc-2Q-cCE"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="item1" destination="q1G-ek-udN" id="NLb-j5-vbF"/>
+                        <outlet property="item2" destination="PFc-2Q-cCE" id="ai3-lY-7Gq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLR-q0-mvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,6 +214,6 @@
         <image name="reveal-icon.png" width="22" height="17"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8Eh-pf-aFR"/>
+        <segue reference="TEz-kF-QGu"/>
     </inferredMetricsTieBreakers>
 </document>
