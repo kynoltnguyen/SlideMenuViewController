@@ -21,6 +21,7 @@
 		68F89ED41D1CE298009EA633 /* RearTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ED31D1CE298009EA633 /* RearTableViewController.m */; };
 		68F89ED71D1CE2A9009EA633 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ED61D1CE2A9009EA633 /* RightViewController.m */; };
 		68F89EDA1D1CE2B3009EA633 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ED91D1CE2B3009EA633 /* MapViewController.m */; };
+		68F89EDC1D1CEDD5009EA633 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F89EDB1D1CEDD5009EA633 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		68F89ED61D1CE2A9009EA633 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 		68F89ED81D1CE2B3009EA633 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		68F89ED91D1CE2B3009EA633 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		68F89EDB1D1CEDD5009EA633 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F89EDC1D1CEDD5009EA633 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +126,7 @@
 				68F89ECA1D1CE1B1009EA633 /* SWRevealViewController.m */,
 				68F89ED11D1CE1CB009EA633 /* Storyboard */,
 				68F89ED01D1CE1C5009EA633 /* View */,
+				68F89EDD1D1CEDE1009EA633 /* Framework */,
 				68F89E901D1CE0D6009EA633 /* Supporting Files */,
 			);
 			path = SlideMenuViewController;
@@ -180,6 +184,14 @@
 				68F89E9E1D1CE0D6009EA633 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		68F89EDD1D1CEDE1009EA633 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				68F89EDB1D1CEDD5009EA633 /* MapKit.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +262,11 @@
 					68F89E8C1D1CE0D6009EA633 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = AMZ95B7UPS;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					68F89EA51D1CE0D6009EA633 = {
 						CreatedOnToolsVersion = 7.3.1;
