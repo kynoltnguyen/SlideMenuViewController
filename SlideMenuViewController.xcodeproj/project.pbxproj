@@ -18,6 +18,9 @@
 		68F89ECB1D1CE1B1009EA633 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ECA1D1CE1B1009EA633 /* SWRevealViewController.m */; };
 		68F89ECE1D1CE1BD009EA633 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F89ECC1D1CE1BD009EA633 /* reveal-icon.png */; };
 		68F89ECF1D1CE1BD009EA633 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68F89ECD1D1CE1BD009EA633 /* reveal-icon@2x.png */; };
+		68F89ED41D1CE298009EA633 /* RearTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ED31D1CE298009EA633 /* RearTableViewController.m */; };
+		68F89ED71D1CE2A9009EA633 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ED61D1CE2A9009EA633 /* RightViewController.m */; };
+		68F89EDA1D1CE2B3009EA633 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89ED91D1CE2B3009EA633 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		68F89ECA1D1CE1B1009EA633 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		68F89ECC1D1CE1BD009EA633 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		68F89ECD1D1CE1BD009EA633 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
+		68F89ED21D1CE298009EA633 /* RearTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RearTableViewController.h; sourceTree = "<group>"; };
+		68F89ED31D1CE298009EA633 /* RearTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RearTableViewController.m; sourceTree = "<group>"; };
+		68F89ED51D1CE2A9009EA633 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		68F89ED61D1CE2A9009EA633 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		68F89ED81D1CE2B3009EA633 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		68F89ED91D1CE2B3009EA633 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +163,12 @@
 			children = (
 				68F89E961D1CE0D6009EA633 /* ViewController.h */,
 				68F89E971D1CE0D6009EA633 /* ViewController.m */,
+				68F89ED21D1CE298009EA633 /* RearTableViewController.h */,
+				68F89ED31D1CE298009EA633 /* RearTableViewController.m */,
+				68F89ED51D1CE2A9009EA633 /* RightViewController.h */,
+				68F89ED61D1CE2A9009EA633 /* RightViewController.m */,
+				68F89ED81D1CE2B3009EA633 /* MapViewController.h */,
+				68F89ED91D1CE2B3009EA633 /* MapViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -303,9 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				68F89E981D1CE0D6009EA633 /* ViewController.m in Sources */,
+				68F89ED41D1CE298009EA633 /* RearTableViewController.m in Sources */,
 				68F89E951D1CE0D6009EA633 /* AppDelegate.m in Sources */,
 				68F89E921D1CE0D6009EA633 /* main.m in Sources */,
 				68F89ECB1D1CE1B1009EA633 /* SWRevealViewController.m in Sources */,
+				68F89ED71D1CE2A9009EA633 /* RightViewController.m in Sources */,
+				68F89EDA1D1CE2B3009EA633 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +549,7 @@
 				68F89EBC1D1CE0D6009EA633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68F89EBD1D1CE0D6009EA633 /* Build configuration list for PBXNativeTarget "SlideMenuViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +558,7 @@
 				68F89EBF1D1CE0D6009EA633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68F89EC01D1CE0D6009EA633 /* Build configuration list for PBXNativeTarget "SlideMenuViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +567,7 @@
 				68F89EC21D1CE0D6009EA633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
