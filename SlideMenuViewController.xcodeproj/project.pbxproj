@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		687E8F591D1E2F89004DC0DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687E8F581D1E2F89004DC0DD /* UIKit.framework */; };
 		68F89E921D1CE0D6009EA633 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89E911D1CE0D6009EA633 /* main.m */; };
 		68F89E951D1CE0D6009EA633 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89E941D1CE0D6009EA633 /* AppDelegate.m */; };
 		68F89E981D1CE0D6009EA633 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F89E971D1CE0D6009EA633 /* ViewController.m */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		687E8F581D1E2F89004DC0DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68F89E8D1D1CE0D6009EA633 /* SlideMenuViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenuViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F89E911D1CE0D6009EA633 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68F89E931D1CE0D6009EA633 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687E8F591D1E2F89004DC0DD /* UIKit.framework in Frameworks */,
 				68F89EDC1D1CEDD5009EA633 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +192,7 @@
 		68F89EDD1D1CEDE1009EA633 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				687E8F581D1E2F89004DC0DD /* UIKit.framework */,
 				68F89EDB1D1CEDD5009EA633 /* MapKit.framework */,
 			);
 			name = Framework;

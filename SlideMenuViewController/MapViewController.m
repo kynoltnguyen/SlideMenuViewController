@@ -30,6 +30,10 @@
     UIBarButtonItem *rightRevealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon.png"]
                                                                               style:UIBarButtonItemStylePlain target:revealController action:@selector(rightRevealToggle:)];
     self.navigationItem.rightBarButtonItem = rightRevealButtonItem;
+    
+    
+    
+    
 }
 
 
